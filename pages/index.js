@@ -17,16 +17,6 @@ const Home = () => {
 
     robotsPresenter.createRobot(form);
 
-    /*
-    axios.post( 'http://localhost:3001/robots', form )
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-      */
-
   }
 
   const handleChangeForm = (event) => {
