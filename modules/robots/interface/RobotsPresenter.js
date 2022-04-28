@@ -7,4 +7,10 @@ export class RobotsPresenter {
         const handler = new CreateRobotHandler();
         await handler.handle(command);
     }
+
+    async attackRobot(params){
+        const command = new AttackRobotCommand(params);
+        const handler = new AttackRobotHandler();
+        await handler.handle(command);
+    }
 }
