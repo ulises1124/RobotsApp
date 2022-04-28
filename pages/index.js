@@ -3,6 +3,7 @@ import axios from 'axios';
 import { RobotsPresenter } from '../modules/robots/interface/RobotsPresenter';
 
 const Home = () => {
+  /* nos traemos la funcionalidad de la clase RobotsPresenter */
   const robotsPresenter = new RobotsPresenter();
   const [likes, setLikes] = useState(0);
 
@@ -13,10 +14,11 @@ const Home = () => {
   });
 
   const handleSubmitForm = (event) => {
+    /* ejecutamos el metodo preventDefault para evitar que el navegador recargue */
     event.preventDefault();
 
+    /* ejecutamos el metodo createRobot que creamos en RobotsPresenter */
     robotsPresenter.createRobot(form);
-
   }
 
   const handleChangeForm = (event) => {
@@ -25,6 +27,12 @@ const Home = () => {
       [event.target.name]: event.target.value
     });
   }
+
+  /* Para atacar al robot el usuario escribe el id */
+
+  /* mediante el boton submit el usuario ataca al robot */
+
+  /* y si todo va bien mostramos en pantalla un ok todo bien */
 
   return (
     <div>
