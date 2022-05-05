@@ -17,7 +17,7 @@ const Home = () => {
     /* ejecutamos el metodo preventDefault para evitar que el navegador recargue */
     event.preventDefault();
 
-    /* ejecutamos el metodo createRobot que creamos en RobotsPresenter */
+    // ejecutamos el metodo createRobot que creamos en RobotsPresenter
     robotsPresenter.createRobot(form);
   }
 
