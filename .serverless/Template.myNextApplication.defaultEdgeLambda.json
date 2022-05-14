@@ -1,0 +1,17 @@
+{
+  "name": "7iky356-txi6zzh",
+  "hash": "vcVwPJ5mnrNv1N6VEJUb5PPOdBFnVZw62hOqWbee8GE=",
+  "description": "Default Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "C:\\Users\\52555\\Desktop\\Proyectos\\RobotsApp\\.serverless_nextjs\\default-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::894822692989:role/7iky356-bh19y0s"
+  },
+  "arn": "arn:aws:lambda:us-east-1:894822692989:function:7iky356-txi6zzh",
+  "region": "us-east-1"
+}
