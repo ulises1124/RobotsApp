@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <div>
 
-      <p>Has dado {likes} likes a </p>
+      <h1>Has dado {likes} likes a </h1>
 
       <button onClick={() => setLikes(likes + 1)}>Click me</button>
       <br /><br />
