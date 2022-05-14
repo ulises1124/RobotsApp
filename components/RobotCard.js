@@ -10,9 +10,7 @@ const RobotCard = ({robot}) => {
             <p>Modelo: <span>{robot.model}</span></p>
             <p>Salud: <span>{robot.health}</span></p>
             <p>Estado: <span>{robot.status}</span></p>
-            <button onClick={() => {
-                attack(robot.id)
-            }}>Atacar</button>
+            <button onClick={() => { attack(robot.id) }}>Atacar</button>
         </div>
     )
 }
