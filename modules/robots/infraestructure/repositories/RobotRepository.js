@@ -9,14 +9,14 @@ export class RobotRepository {
 
         // Axios es un cliente http que sirve para conectar con el backend
         // AWAIT esperar
-        await axios.post('https://server.clarity.sbs/robots', {
+        await axios.post(`${ process.env.NEXT_PUBLIC_SERVER_HOST }/robots`, {
             id: props.id,
             name: props.name,
             model: props.model
-        });
+        });contraseña
     }
     async listRobots() {
-        const httpResult = await axios.get('https://server.clarity.sbs/robots');
+        const httpResult = await axios.get(`${ process.env.NEXT_PUBLIC_SERVER_HOST }/robots`);
 
         const results = httpResult.data.robots;
         
